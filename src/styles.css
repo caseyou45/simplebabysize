@@ -1,0 +1,90 @@
+body {
+  font-family: "Spartan", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.alert {
+  margin: 7px 2px 10px;
+  color: red;
+}
+.App {
+  text-align: center;
+}
+
+.head {
+  padding: 12px 0;
+}
+
+.heading {
+  text-align: center;
+}
+
+.container {
+  margin: 0 35%;
+}
+
+.buttons {
+  margin-top: 1rem;
+}
+
+.buttons button {
+  margin: 0 0 2rem;
+  font-family: "Spartan", sans-serif;
+  font-size: 11px;
+}
+
+.info {
+  margin: 1rem 4rem 0.5rem;
+}
+
+.title {
+  padding: 3% 10% 2%;
+}
+
+.input {
+  margin: 2% 15%;
+  padding: 5%;
+}
+
+footer {
+  margin: 8% 0% 3%;
+  text-align: center;
+  width: 100%;
+  height: 2.5rem;
+}
+
+hr {
+  background-color: black;
+  margin-top: 45px;
+  height: 0.2px;
+  width: 250px;
+  border: 0;
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    margin: 0 5%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  .container {
+    margin: 0 10%;
+  }
+  .title {
+    padding: 7% 10% 2%;
+  }
+}
+
+@media only screen and (device-width: 768px) {
+  .container {
+    margin: 0 25%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+  .container {
+    margin: 0 25%;
+  }
+}
