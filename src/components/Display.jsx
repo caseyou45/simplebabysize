@@ -1,8 +1,9 @@
 import React from "react";
 import weeks from "../babydata";
 import Grid from "@material-ui/core/Grid";
-import hand from "../../src/images/HAND_USE.png";
-import baby from "../../src/images/BABY_USE.png";
+import hand from "../../src/images/HAND_2.png";
+import baby from "../../src/images/BABY_2.png";
+
 
 export default function Display(props) {
   let comparitorValue;
@@ -25,13 +26,15 @@ export default function Display(props) {
   }
 
   let week = weeks[props.displayDate];
-  let realHandHeight = comparitorValue / 4;
-  let realBabyHieght = week.height / 4;
+  let realHandHeight = comparitorValue / 5;
+  let realBabyHieght = (week.height / 5) / .639;
+  
 
-  if (props.displayDate > 16) {
-    realHandHeight = (7.5 * comparitorValue) / week.height / 4;
-    realBabyHieght = 7.5 / 4;
+  if (props.displayDate > 19 ) {
+    realHandHeight = (10.10 * comparitorValue) / week.height / 5;
+    realBabyHieght = 10.10 / 5;
   }
+
   let computedBabyHeaight = realBabyHieght + "in";
   let computedHandHeight = realHandHeight + "in";
 
@@ -43,17 +46,17 @@ export default function Display(props) {
       alignItems="center"
       className="container"
       spacing={0}
-      // className="object-container"
-      // className="baby-container"
+
+
     >
-      <Grid item xs={6} sm={6}>
+      <Grid item className="item" >
         <img
           alt="object of comparison"
           src={comparitorSoruce}
           style={{ height: computedHandHeight }}
         />
       </Grid>
-      <Grid item xs={6} sm={6}>
+      <Grid item className="item" >
         <img alt="baby" src={baby} style={{ height: computedBabyHeaight }} />
       </Grid>
     </Grid>

@@ -1,6 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./Home";
+import Info from "./Info";
+
 import { makeStyles } from "@material-ui/core/styles";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
@@ -76,21 +78,12 @@ export default function NavBar() {
               </MenuItem>
               <MenuItem
                 component={Link}
-                to="/about"
+                to="/info"
                 variant="contained"
                 color="primary"
                 onClick={handleClose}
               >
-                About
-              </MenuItem>
-              <MenuItem
-                component={Link}
-                to="/contact"
-                variant="contained"
-                color="primary"
-                onClick={handleClose}
-              >
-                Contact
+                More Info
               </MenuItem>
             </Menu>
           </Toolbar>
@@ -98,11 +91,8 @@ export default function NavBar() {
       </div>
       <div>
         <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/contact">
-            <Contact />
+          <Route path="/info">
+            <Info />
           </Route>
           <Route path="/">
             <Home />

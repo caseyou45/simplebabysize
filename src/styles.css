@@ -13,19 +13,43 @@ body {
 }
 
 .head {
-  padding: 12px 0;
+  padding-top: 12px;
 }
 
 .heading {
   text-align: center;
 }
 
-.container {
-  margin: 0 35%;
+.body{
+  text-align: left;
+  text-indent: 30px;
+  line-height: 20px;
+  
 }
 
-.buttons {
-  margin-top: 1rem;
+.info-item{
+  margin: 3% 15%;
+  padding: 2%;
+  line-height: 19px;
+}
+
+.info-item > p  {
+  text-align: left;
+  text-indent: 30px;
+  font-size: 14px;
+  word-wrap: break-word;
+
+
+}
+
+.container {
+  height: 290px;
+
+
+}
+
+.item{
+  width: 175px;
 }
 
 .buttons button {
@@ -34,57 +58,89 @@ body {
   font-size: 11px;
 }
 
+.icon {
+  padding-bottom: 3.8px;
+}
+
 .info {
   margin: 1rem 4rem 0.5rem;
 }
 
 .title {
-  padding: 3% 10% 2%;
+  padding: 3% 10% 1%;
 }
 
 .input {
   margin: 2% 15%;
   padding: 5%;
 }
+.icon{
+  margin: 0 .5%;
+}
 
 footer {
-  margin: 8% 0% 3%;
+  margin: 8% 0% 6%;
   text-align: center;
   width: 100%;
   height: 2.5rem;
 }
 
-hr {
+
+
+.ruleOne {
+  background: linear-gradient(to right, #9896f1, #6639a6);
+  height: 4px;
+  width: 250px;
+  border: 0;
+  margin-top: 1%;
+
+
+}
+
+.ruleTwo{
+  background: linear-gradient(to right, #4ecca3, #1f5f8b);
+  height: 3px;
+  width: 220px;
+  border: 0;
+
+
+}
+
+.ruleThree {
   background-color: black;
-  margin-top: 45px;
   height: 0.2px;
   width: 250px;
   border: 0;
+  margin-top: 3%;
 }
 
-@media only screen and (max-width: 700px) {
+.rumpStyle{
+  width: 170px;
+  color: white;
+  padding: 5px;
+  padding: 6px;
+  margin: auto;
+  background: linear-gradient(to right, #9896f1, #6639a6);
+  border-radius: 10px;
+
+
+}
+
+.toeStyle{
+  width: 150px;
+  padding-bottom: 5px;
+  margin: auto;
+  color: white;
+  padding: 6px;
+  background: linear-gradient(to right, #4ecca3, #1f5f8b);
+  border-radius: 10px;
+
+}
+
+
+@media only screen and (device-width: 320px) {
   .container {
-    margin: 0 5%;
+    height: 400px;
   }
 }
 
-@media only screen and (max-width: 768px) and (orientation: portrait) {
-  .container {
-    margin: 0 10%;
-  }
-  .title {
-    padding: 7% 10% 2%;
-  }
-}
-
-@media only screen and (device-width: 768px) {
-  .container {
-    margin: 0 25%;
-  }
-}
-
-@media only screen and (max-width: 768px) and (orientation: landscape) {
-  .container {
-    margin: 0 25%;
-  }
-}
