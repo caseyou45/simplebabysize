@@ -12,8 +12,8 @@ import {
 
 export default function LastPeriod(props) {
   // The first commit of Material-UI
-  const [selectedDate, setSelectedDate] = React.useState(new Date());
-  const [selectedPeriod, setSelectedPeriod] = React.useState(0);
+  const [selectedDate, setSelectedDate] = useState(new Date());
+  const [selectedPeriod, setSelectedPeriod] = useState(0);
 
   const handleDateChange = (event, date) => {
     setSelectedDate(date);

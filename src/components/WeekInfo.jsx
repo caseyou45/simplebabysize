@@ -1,13 +1,8 @@
-import React, {useState} from "react";
+import React from "react";
 import weeks from "../babydata";
 import Grid from "@material-ui/core/Grid";
 
 export default function WeekInfo(props) {
-
-
-  const [showNothing, setShowNothing] = useState(true);
-  const [showRump, setShowRump] = useState(false);
-  const [showToe, setShowToe] = useState(false);
 
   let title;
   let info;
@@ -52,7 +47,7 @@ export default function WeekInfo(props) {
       {props.day <= 19 && (
         <p className="rumpStyle"> from head to rump</p>
       )}
-      {props.day > 19 && props.day != 41 &&  (
+      {props.day > 19 && props.day !== 41 &&  (
         <p className="toeStyle"> from head to toe</p>
       )}
 

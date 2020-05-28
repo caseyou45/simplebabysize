@@ -11,7 +11,7 @@ import {
 
 export default function DueDate(props) {
   // The first commit of Material-UI
-  const [selectedDate, setSelectedDate] = React.useState(new Date());
+  const [selectedDate, setSelectedDate] = useState(new Date());
 
   const handleDateChange = (event, date) => {
     setSelectedDate(date);
