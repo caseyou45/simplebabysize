@@ -134,7 +134,7 @@ export default function Input(props) {
         />
       )}
 
-      <hr className="ruleThree"/>
+      <hr className="ruleThree" />
     </Grid>
   );
 }

@@ -10,24 +10,24 @@ import MenuIcon from "@material-ui/icons/Menu";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 2
+    flexGrow: 2,
   },
 
   menuButton: {
-    marginLeft: "10px"
+    marginLeft: "10px",
   },
 
   app: {
     background: "white",
-    color: "black"
+    color: "black",
   },
 
   background: {
     padding: "3px",
-    fontFamily: "Arial"
-  }
+    fontFamily: "Arial",
+  },
 }));
 
 export default function NavBar() {
@@ -35,7 +35,7 @@ export default function NavBar() {
 
   const [anchorEl, setAnchorEl] = React.useState(null);
 
-  const handleClick = event => {
+  const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
 
@@ -101,4 +101,3 @@ export default function NavBar() {
     </Router>
   );
 }
-

@@ -7,7 +7,7 @@ import TextField from "@material-ui/core/TextField";
 
 import {
   MuiPickersUtilsProvider,
-  KeyboardDatePicker
+  KeyboardDatePicker,
 } from "@material-ui/pickers";
 
 export default function LastPeriod(props) {
@@ -26,7 +26,7 @@ export default function LastPeriod(props) {
   function handleClick(e) {
     props.onAdd({
       date: selectedDate,
-      period: selectedPeriod
+      period: selectedPeriod,
     });
   }
 
@@ -42,7 +42,7 @@ export default function LastPeriod(props) {
           value={selectedDate}
           onChange={handleDateChange}
           KeyboardButtonProps={{
-            "aria-label": "change date"
+            "aria-label": "change date",
           }}
         />
       </Grid>
@@ -57,7 +57,7 @@ export default function LastPeriod(props) {
           label="Enter Average Days of Cycle"
           type="number"
           InputLabelProps={{
-            shrink: true
+            shrink: true,
           }}
         />
       </form>

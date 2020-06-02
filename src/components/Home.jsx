@@ -9,9 +9,8 @@ import Comparison from "./Comparison";
 import Grid from "@material-ui/core/Grid";
 import Title from "./Title";
 import Footer from "./Footer";
-import ArrowLeftRoundedIcon from '@material-ui/icons/ArrowLeftRounded';
-import ArrowRightRoundedIcon from '@material-ui/icons/ArrowRightRounded';
-
+import ArrowLeftRoundedIcon from "@material-ui/icons/ArrowLeftRounded";
+import ArrowRightRoundedIcon from "@material-ui/icons/ArrowRightRounded";
 
 export default function Home() {
   const [day, setDay] = useState(41);
@@ -19,11 +18,11 @@ export default function Home() {
 
   const [comparitor, setComparitor] = useState("femaleHand");
 
-  const createDueDate = newValue => {
+  const createDueDate = (newValue) => {
     setDay(newValue);
   };
 
-  const actualDueDate = dueDateValue => {
+  const actualDueDate = (dueDateValue) => {
     setDueDate(dueDateValue);
   };
 
@@ -63,15 +62,21 @@ export default function Home() {
             color="default"
             aria-label="text default button group"
           >
-            <Button 
+            <Button
               startIcon={<ArrowLeftRoundedIcon className="icon" />}
-              onClick={() => backward(day)}>Previous Week</Button>
-            <Button 
+              onClick={() => backward(day)}
+            >
+              Previous Week
+            </Button>
+            <Button
               endIcon={<ArrowRightRoundedIcon className="icon" />}
-              onClick={() => forward(day)}>Next Week</Button>
+              onClick={() => forward(day)}
+            >
+              Next Week
+            </Button>
           </ButtonGroup>
         </Grid>
-        <Footer displayDate={day}/>
+        <Footer displayDate={day} />
       </Grid>
     </div>
   );

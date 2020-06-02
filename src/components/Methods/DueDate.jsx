@@ -6,7 +6,7 @@ import Button from "@material-ui/core/Button";
 
 import {
   MuiPickersUtilsProvider,
-  KeyboardDatePicker
+  KeyboardDatePicker,
 } from "@material-ui/pickers";
 
 export default function DueDate(props) {
@@ -33,7 +33,7 @@ export default function DueDate(props) {
           value={selectedDate}
           onChange={handleDateChange}
           KeyboardButtonProps={{
-            "aria-label": "change date"
+            "aria-label": "change date",
           }}
         />
       </Grid>
