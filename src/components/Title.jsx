@@ -14,7 +14,7 @@ export default function Title(props) {
         <hr className="ruleOne"></hr>
         <hr className="ruleTwo"></hr>
 
-        <Box my={3} mx={2} p={2} pl={3} boxShadow={3} className="body">
+        <Box my={3} mx={4} p={2} pl={3} boxShadow={3} className="body">
           <p>
             It's helpful for a parent-to-be to know the size of their baby as he
             or she develops week by week. But many charts and infographics use
