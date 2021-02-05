@@ -43,7 +43,6 @@ export default function MethodSelect(props) {
           value={method}
           onChange={handleChange}
         >
-          */}
           <MenuItem value={"dueDate"}>Due Date</MenuItem>
           <MenuItem value={"conception"}>Date of Conception</MenuItem>
           <MenuItem value={"lastPeriod"}>Last Period</MenuItem>

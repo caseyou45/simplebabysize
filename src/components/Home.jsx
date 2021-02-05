@@ -49,35 +49,33 @@ export default function Home() {
   }
   return (
     <div>
-      <Grid container spacing={1}>
-        <Title />
-        <Input getDate={createDueDate} actualDueDate={actualDueDate} />
-        <WeekInfo day={day} dueDate={dueDate} />
-        <Comparison getComparison={setComparison} />
-        <Display displayDate={day} comparitor={comparitor} />
-        <Grid item xs={12}>
-          <ButtonGroup
-            className="buttons"
-            variant="text"
-            color="default"
-            aria-label="text default button group"
+      <Title />
+      <Input getDate={createDueDate} actualDueDate={actualDueDate} />
+      <WeekInfo day={day} dueDate={dueDate} />
+      <Comparison getComparison={setComparison} />
+      <Display displayDate={day} comparitor={comparitor} />
+      <Grid item xs={12}>
+        <ButtonGroup
+          className="buttons"
+          variant="text"
+          color="default"
+          aria-label="text default button group"
+        >
+          <Button
+            startIcon={<ArrowLeftRoundedIcon className="icon" />}
+            onClick={() => backward(day)}
           >
-            <Button
-              startIcon={<ArrowLeftRoundedIcon className="icon" />}
-              onClick={() => backward(day)}
-            >
-              Previous Week
-            </Button>
-            <Button
-              endIcon={<ArrowRightRoundedIcon className="icon" />}
-              onClick={() => forward(day)}
-            >
-              Next Week
-            </Button>
-          </ButtonGroup>
-        </Grid>
-        <Footer displayDate={day} />
+            Previous Week
+          </Button>
+          <Button
+            endIcon={<ArrowRightRoundedIcon className="icon" />}
+            onClick={() => forward(day)}
+          >
+            Next Week
+          </Button>
+        </ButtonGroup>
       </Grid>
+      <Footer displayDate={day} />
     </div>
   );
 }
